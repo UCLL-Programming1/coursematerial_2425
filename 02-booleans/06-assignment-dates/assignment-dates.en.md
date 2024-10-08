@@ -18,7 +18,7 @@ However, if the year is divisible by 100, it is _not_ a leap year, except if it 
 ### `IMPORTANT`
 
 This exercise involves writing more than one function.
-All tests are grouped in a single file named `test-dates.py`.
+All tests are grouped in a single file named `test.py`.
 
 ### `TASK`
 
