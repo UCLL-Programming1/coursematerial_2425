@@ -15,21 +15,21 @@ Write a function `is_student_id(string)` that returns `True` if `string` is a va
 #### USAGE
 
 ```python
->>> is_student_id('r01234567')
+>>> is_student_id('r0123456')
 True
 
->>> is_student_id('R01234567')
+>>> is_student_id('R0123456')
 True
 
->>> is_student_id('s01234567')
+>>> is_student_id('s0123456')
 True
 
 # Too short
->>> is_student_id('r0123456')
+>>> is_student_id('r012345')
 False
 
 # Missing first letter
->>> is_student_id('001234567')
+>>> is_student_id('00123456')
 False
 
 # Wrong first letter
