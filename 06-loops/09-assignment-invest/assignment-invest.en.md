@@ -28,7 +28,6 @@ Simply simulate the passage of time using a loop.
 #### `HINT`
 
 You can use the following formula to calculate how much your investment grows in a year:
-
 $$
-\textrm{amount} * \frac{rate}{100}
+\textrm{amount}_{year+1} = \textrm{amount}_{year} + \textrm{amount}_{year} * \frac{rate}{100}
 $$
