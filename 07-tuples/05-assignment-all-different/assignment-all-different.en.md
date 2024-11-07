@@ -4,6 +4,19 @@
 
 Write a function `all_different(xs)` that returns `True` if all elements are distinct, `False` otherwise.
 
+#### Example usage
+
+```python
+>>> all_different((1,2,3,4,5))
+True
+>>> all_different((1,2,3,2,5))
+False
+>>> all_different((1))
+True
+>>> all_different(())
+True
+```
+
 #### `HINT 1`
 
 Contrary to `all_equal`, you will have to compare every pair of elements.
