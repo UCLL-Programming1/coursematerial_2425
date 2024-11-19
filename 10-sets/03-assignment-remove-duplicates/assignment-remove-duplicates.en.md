@@ -6,6 +6,8 @@ Write a function `remove_duplicates(xs)` that takes a list `xs` and returns a co
 The first occurrence of each value must be left untouched.
 The order must be preserved.
 
+Make sure your code is efficient as the tests will feed your function large inputs.
+
 #### USAGE
 
 ```python
