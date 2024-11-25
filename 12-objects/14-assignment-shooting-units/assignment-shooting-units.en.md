@@ -31,10 +31,6 @@ Create a class `Unit`.
 
 As a reminder: exceptions are thrown using
 
-### `TASK`
-
-code{caption="Python"}
-
 ```python
 raise ValueError()
 ```
