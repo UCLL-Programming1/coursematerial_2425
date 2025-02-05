@@ -2,7 +2,7 @@ import pytest
 
 # import code from student.py
 try:
-    from student import decode1, decode2, decode3, decode4, decode5  # Import student's functions from student.py
+    from student import decode1, decode2, decode3, decode4  # Import student's functions from student.py
 except ImportError as e:
     pytest.fail(f"Import error: {str(e)}. Make sure the functions 'decode1', 'decode2', 'decode3', 'decode4' and 'decode5' are correctly defined in 'student.py'.")
 
@@ -27,7 +27,7 @@ def test_decode1(test_input, expected):
         pytest.fail(f"Error occurred when testing input '{test_input}' with decode1: {str(e)}")
 
 
-# Test cases for decode2 
+# Test cases for decode2
 @pytest.mark.parametrize("test_input,expected", [
     ("bKeFakrC", "bear"),
     ("dfojlTpJhxianC", "dolphin"),
@@ -88,24 +88,4 @@ def test_decode4(test_input, expected):
     except Exception as e:
         pytest.fail(f"Error occurred when testing input '{test_input}' with decode4: {str(e)}")
 
-
-
-# Test cases for decode5
-@pytest.mark.parametrize("test_input,expected", [
-    ("NBFOeWdu XfPAkkagtkzm CaxIkkrGaNprtOGYQszl fhmbdYeI YndYkdrUAVlLlqecnSZJQpxiklmJ ", "de kat krapt de krollen"),
-    ("usXxnnaCvIBH aLabdxec VgklrGAXlnlOewnedAevYRQZHszQUUnk OOjErfAalbtzrNavpiGOPLAySDgd ", "van de rollende roltrap"),
-    ("IaaqeCmsOHTb ALdkwFirlrlUeqmaxLCSKnbF eLStdGabnYsMtYQXLPWZ BfRAdhen RsZstqajneggAzZMxROm ", "Ome willem danst de tango"),
-    ("HrBMeaiHnfnXifWMnWlMpQpI vFwJtIhaekUZ uqlepRAVAkhbDeBA TUAIauntdMJq eilDtlixgDewrSFLIiSg nKEHlVApvGeGeqJG xcLUcPlxiImsbIitntgAPSCAKKerHMXI wUpBtnraekeGsUNXAwiA ", "Winnie the pooh and tiger love climbing trees"),        
-    ("URfJsLiShzteJjkb wJQmiNsT bqEPaC BrqIcJrhaEpHpVyzKNNKqfjw lzkXszeLnmtsexnfcKediLzPPyCdUdtw ", "this is a crappy sentence"),
-    ("bEAKsOeFcXnDaWtXsWmruqcfryizcaUcNQZNXgzscVUrvYhVsSxL UEgThhaavIevncab PXkZcuhuaanrgKegdySazGcarZGW ", "circumstances have changed"),
-    ])
-
-def test_decode5(test_input, expected):
-    try:
-        result = decode5(test_input).strip()
-        assert result == expected, (
-            f"Expected {expected} when decoding '{test_input}', but got '{result}'."
-        )
-    except Exception as e:
-        pytest.fail(f"Error occurred when testing input '{test_input}' with decode5: {str(e)}")
 

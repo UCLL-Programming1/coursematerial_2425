@@ -8,7 +8,7 @@
 
 ## Decrypting messages
 
-Two pupils have developed their own encryption system to secretly pass messages to each other in class. It is up to you to write functions decrypting their texts based on their different methods. 
+Two pupils have developed their own encryption system to secretly pass messages to each other in class. It is up to you to write functions decrypting their texts based on their different methods.
 
 ### Strategy 1
 Their first strategy is to replace all o’s with A’s. Write a function `decode1(word)` to decipher the word (crack the code) returning the original word.
@@ -23,10 +23,10 @@ Their first strategy is to replace all o’s with A’s. Write a function `decod
 
 Before reading the specific encryption methods and thinking about how to decipher them, it is important to fully understand the assignment.
 
-We are talking about **encrypting and decrypting** words. But what does that mean? What is the encrypted word and what the decrypted? And the original one? 
+We are talking about **encrypting and decrypting** words. But what does that mean? What is the encrypted word and what the decrypted? And the original one?
 
 #### Explanation encryption-decryption
-We have a word, say “duck”, we want to encrypt. The encryption method we use is to reverse the order of the letters, therefore the encrypted word is “kcud”. To go back from this encrypted word “kcud”, we apply the process of decryption. The resulting decrypted word is “duck”, the same word as the original one. Encrypting and decrypting are reversed processes. 
+We have a word, say “duck”, we want to encrypt. The encryption method we use is to reverse the order of the letters, therefore the encrypted word is “kcud”. To go back from this encrypted word “kcud”, we apply the process of decryption. The resulting decrypted word is “duck”, the same word as the original one. Encrypting and decrypting are reversed processes.
 
 ![example duck](scheme1.png)
 
@@ -45,7 +45,7 @@ The pupils did the process of encryption, we need to write code to decrypt the w
 Write your code in the file student.py
 
 ### Strategy 2
-As their messages could easily be cracked by the teacher and other students, they implemented another strategy. Every letter of the word was followed by another random letter. 
+As their messages could easily be cracked by the teacher and other students, they implemented another strategy. Every letter of the word was followed by another random letter.
 
 Write a function `decode2(word)` to decrypt the coded message.
 
@@ -75,27 +75,8 @@ Their newest strategy, is their most successful, according to them. The word its
 "dolfijn
 
 >>> decode4("oddolfijnnjiflK")
-"dolfijn
+"dolfijn"
 
-```
-
-### Strategy 5
-*For this exercise you need to be familiar with loops.*
-
-To ensure the secrecy of their messages, the pupils decide to combine their 4 strategies. First they apply strategy 3, followed by strategy 4, strategy 2 and lastly strategy 1. Write a function `decode5(sentence)`, that takes as input an encrypted sentence and returns the decrypted or original sentence. Use the functions you already defined to limit duplicated code in `decode5(sentence)`.
-
-Hint: think about the encryption-decryption scheme.
-
-```python
-sentence = "MDEneEdU oAXnkgaCteJE vMtokdrHarpltSKuspcc aaaudAev xzsRkVrSoDlolMernyFZpRHQDdkX QggivNajnoQU youKdSeq lnegtwrvatpeXeUu"       
-
->>> decode5(sentence)
-"de kat krapt de krollen van de trap"
-
-sentence = "rAxNejhfTrns maGwcaifrIcRuEmzsHtxaUnVcSeWsllKnmsYiMiFwQpMZyRhabPu aHhPhyajvfeViSYg xrfAcphhadnqgIeodAAXyDjTcFGT"
-
->>> decode5(sentence)
-"The circumstances have changed"
 ```
 
 ## Encryption
