@@ -11,17 +11,6 @@ For example, instead of using File Explorer to view your files, you use the `ls`
 
 From now on, when we talk about the shell (or the terminal), we mean this command line interface.
 
-## Multiple Shells
-
-A text-based shell is an application just like any other.
-Anyone can make their own shell, which is why there are many choices around:
-
-* [cmd.exe](https://en.wikipedia.org/wiki/Cmd.exe) is severely outdated and should really be avoided.
-* [PowerShell](https://en.wikipedia.org/wiki/PowerShell)
-* [Bourne-Again Shell (Bash)](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
-* [Z shell](https://en.wikipedia.org/wiki/Z_shell)
-
-We suggest you rely on Bash (Windows and Linux) and Z Shell (MacOS).
 
 ## Launching the Shell
 
