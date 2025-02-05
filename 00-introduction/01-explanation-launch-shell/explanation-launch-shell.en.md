@@ -46,14 +46,31 @@ Type "help", "copyright", "credits" or "license" for more information.
 The OS shell and the Python shell are two completely different beasts.
 Do not confuse the two!
 
+For example `ls` is an OS shell command that shows the contents of the current directory:
 
 ```bash
-$ some OS shell command to type in
+$ ls
+file_one.txt    python_script.py
 ```
 
+Typing that same command into a Python shell will result in an error, because Python doesn't recognize that command:
 
 ```python
->>> some Python code
+>>> ls
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'ls' is not defined
 ```
 
+On the other `print` is a Python built-in function that works great in a Python shell:
+```python
+>>> print("Hello World!")
+Hello World!
+```
 
+Typing it in an OS shell however will also result in an error:
+```bash
+$ print("Hello World!")
+zsh: unknown file attribute: H
+```
+(The exact error can be slightly different depending on the system you're using)
