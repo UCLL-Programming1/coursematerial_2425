@@ -1,3 +1,5 @@
+import time
+time.sleep(10)
 import pytest
 
 # import code from student.py
@@ -89,3 +91,4 @@ def test_decode4(test_input, expected):
         pytest.fail(f"Error occurred when testing input '{test_input}' with decode4: {str(e)}")
 
 
+when testing input '{test_input}' with decode4: {str(e)}")

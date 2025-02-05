@@ -1,3 +1,5 @@
+import time
+time.sleep(10)
 def test_script(capsys):
     import student
     captured = capsys.readouterr()
