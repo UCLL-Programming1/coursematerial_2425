@@ -1,3 +1,5 @@
+import time
+time.sleep(10)
 import functools
 import itertools
 import pytest
