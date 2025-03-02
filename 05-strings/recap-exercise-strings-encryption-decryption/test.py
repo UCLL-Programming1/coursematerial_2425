@@ -90,5 +90,3 @@ def test_decode4(test_input, expected):
     except Exception as e:
         pytest.fail(f"Error occurred when testing input '{test_input}' with decode4: {str(e)}")
 
-
-when testing input '{test_input}' with decode4: {str(e)}")
