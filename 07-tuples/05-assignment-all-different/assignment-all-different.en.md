@@ -11,7 +11,7 @@ Write a function `all_different(xs)` that returns `True` if all elements are dis
 True
 >>> all_different((1,2,3,2,5))
 False
->>> all_different((1))
+>>> all_different((1,))
 True
 >>> all_different(())
 True
